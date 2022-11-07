@@ -1,5 +1,7 @@
 {
   "name": "CS430_PorterW6Assignment",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
