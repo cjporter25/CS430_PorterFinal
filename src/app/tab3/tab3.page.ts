@@ -1,3 +1,5 @@
+//TAB 3 TS//
+
 import { Component, ViewChild } from '@angular/core';
 import { IonAccordionGroup } from '@ionic/angular';
 

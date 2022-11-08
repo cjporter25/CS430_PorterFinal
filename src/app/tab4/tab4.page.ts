@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonAccordionGroup } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab4',
@@ -12,4 +13,17 @@ export class Tab4Page implements OnInit {
   ngOnInit() {
   }
 
+}
+
+export class ExampleComponent {
+  @ViewChild('accordionGroup', { static: true }) accordionGroup: IonAccordionGroup;
+
+  toggleAccordion = () => {
+    const nativeEl = this.accordionGroup;
+    if (nativeEl.value === 'first') {
+      nativeEl.value = undefined;
+    } else {
+      nativeEl.value = 'first';
+    }
+  };
 }

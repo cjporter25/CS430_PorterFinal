@@ -1,3 +1,5 @@
+//TAB 1 TS//
+
 import { Component } from '@angular/core';
 import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 

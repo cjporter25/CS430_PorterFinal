@@ -1,3 +1,5 @@
+//TAB BAR SCSS//
+
 
 ion-tab-bar {
     bottom: 20px;           //20px buffer between tab bar and bottom
@@ -12,16 +14,17 @@ ion-tab-bar {
 ion-tab-button {
     --color: var(--OW2-color-dark-gray);
     --color-selected: var(--OW2-color-dark-blue);
-  
+//Top Orange Bar is invisible if tab is not selected  
 &::before {
     background-color: transparent;
     display: block;
-    content: "";
+    content: "";    //empty string to create empty space
     margin: 0 auto;
     width: 20px;
     height: 2px;
     }
   
+//When selected, change to a OW2 orange color
 &.tab-selected::before {
     background-color: var(--OW2-color-orange);
     }
