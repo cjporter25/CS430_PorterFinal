@@ -1,19 +1,20 @@
-ion-title.title-large {
-    --color: var(--OW2-color-dark-gray);
-    font-size: 20px;
-    position: relative;
-    text-align: center;
-    padding-top: 5px;
-    
-}
-
-ion-title {
-    --color: var(--OW2-color-dark-gray);
-}
-
+/* Toolbar Styling */
 ion-toolbar {
-    --background: var(--ion-color-medium);
-    border-radius: 16px;
-    width: 92%;
+    --background: var(--OW2-color-dark-blue);
     margin: 0 auto;
+}
+
+/* Title Text Styling */
+ion-title {
+    --color: var(--ion-color-secondary-contrast);
+    text-align: center;
+    font-size: 12px;
+}
+
+/***TO DO ***/
+    //Figure out how to apply specific styling to only android. 
+    //  Title is not comfortable vertical centered
+
+ion-content::part(background) {
+    --background: var(--OW2-color-dark-blue);
 }

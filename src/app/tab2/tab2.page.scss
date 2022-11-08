@@ -1,19 +1,64 @@
-ion-title.title-large {
-    --color: var(--OW2-color-dark-gray);
-    font-size: 20px;
-    position: relative;
-    text-align: center;
-    padding-top: 5px;
-    
-}
 
-ion-title {
-    --color: var(--OW2-color-dark-gray);
-}
+//ion-title.title-large {
+//    --color: var(--OW2-color-dark-gray);
+//    font-size: 10px;
+//    position: relative;
+//    text-align: center;
+//    padding-top: 5px;
+//    
+//}
 
+
+
+//The ion-header container is already translucent
+
+/* Toolbar Styling */
 ion-toolbar {
-    --background: var(--ion-color-medium);
-    border-radius: 16px;
-    width: 92%;
+    --background: var(--OW2-color-dark-blue);
     margin: 0 auto;
+}
+
+/* Title Text Styling */
+ion-title {
+    --color: var(--ion-color-secondary-contrast);
+    text-align: center;
+}
+
+/***TO DO ***/
+    //Figure out how to apply specific styling to only android. 
+    //  Title is not comfortable vertical centered
+
+
+
+ion-icon {
+    position: right;
+    --color: var(--OW2-color-orange);
+}
+
+//Specific spacing settings for the camera
+div.photoDisplay {
+    padding-top: 10px; //Provide some space away from buttons
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+div.cameraButtons {
+    padding-top: 10px; //Provide some space away from accordian elements
+    width: 40%;
+    margin: 0 auto;
+}
+
+ion-button {
+    --color: var(--ion-color-secondary-contrast);
+    --background: var(--OW2-color-orange);
+}
+
+//Set the background color of ion-content to dark blue
+ion-content::part(background) {
+    --background: var(--OW2-color-dark-blue);
+}
+
+ion-content::part(scroll) {
+    --color: var(--OW2-color-dark-blue);
 }

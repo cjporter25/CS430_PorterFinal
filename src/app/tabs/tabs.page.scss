@@ -2,16 +2,16 @@
 ion-tab-bar {
     bottom: 20px;           //20px buffer between tab bar and bottom
     position: relative;     
-    border-radius: 16px;
-    border-color: var(--OW2-color-dark-gray);
-    border-width: 5px;
-    width: 92%;
-    margin: 0 auto;
+    border-radius: 16px;    //Tab bar rounded corners  by 16px
+    border-color: var(--OW2-color-dark-blue); //Exposed border is dark blue
+    border-width: 5px;      //Border extends by 5px
+    width: 92%;             //Tab bar will only cover 92% of screen
+    margin: 0 auto;         //Margin is automatic = centered tab bar
   }
 
 ion-tab-button {
-    --color: var(--ion-color-medium);
-    --color-selected: var(--OW2-color-dark-gray);
+    --color: var(--OW2-color-dark-gray);
+    --color-selected: var(--OW2-color-dark-blue);
   
 &::before {
     background-color: transparent;

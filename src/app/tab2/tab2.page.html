@@ -1,17 +1,16 @@
+<!--OVERWATCH 2 TANKS TAB-->
+<!----------HTML----------->
+
+
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      OW2 Tanks
+    <ion-title> 
+      OW2 Tanks 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">OW2 Tanks</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
   <!--Creating a list of collapsible objects-->
   <ion-accordion-group [multiple]="true">
@@ -23,7 +22,7 @@
         Fusion Cannons
         <ul>
           <li>Damage: 06 - 2 (10-20m)</li>
-          <li>####</li>
+          <li>Number of Pellets: 11</li>
           <li>Rate of Fire: 6.66</li>
         </ul>
       </div>
@@ -154,9 +153,21 @@
       </div>
     </ion-accordion>
 
-
   </ion-accordion-group>
 
+  <div class="cameraButtons">
+    <ion-button (click)="getCamera()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-button>
+    <ion-button (click)="getGallery()">
+      <ion-icon name="image"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="photoDisplay">
+    <img src="{{imgURL}}" height="200" width="200"/>
+  </div>
+  
 </ion-content>
 
 
