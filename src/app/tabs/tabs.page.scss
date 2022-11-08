@@ -26,3 +26,12 @@ ion-tab-button {
     background-color: var(--OW2-color-orange);
     }
 }
+
+//Set the background color of ion-content to dark blue
+ion-content::part(background) {
+    --background: var(--OW2-color-dark-blue);
+}
+
+ion-content::part(scroll) {
+    --color: var(--OW2-color-dark-blue);
+}

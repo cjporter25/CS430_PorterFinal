@@ -1,3 +1,7 @@
+ion-content::part(background) {
+    --background: var(--OW2-color-dark-blue);
+}
+
 /* Toolbar Styling */
 ion-toolbar {
     --background: var(--OW2-color-dark-blue);
@@ -15,6 +19,28 @@ ion-title {
     //Figure out how to apply specific styling to only android. 
     //  Title is not comfortable vertical centered
 
-ion-content::part(background) {
-    --background: var(--OW2-color-dark-blue);
+
+
+ion-icon {
+    //position: right;
+    --color: var(--OW2-color-orange);
+}
+
+//Specific spacing settings for the camera
+div.photoDisplay {
+    padding-top: 10px; //Provide some space away from buttons
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+div.cameraButtons {
+    padding-top: 10px; //Provide some space away from accordian elements
+    width: 40%;
+    margin: 0 auto;
+}
+
+ion-button {
+    --color: var(--ion-color-secondary-contrast);
+    --background: var(--OW2-color-orange);
 }

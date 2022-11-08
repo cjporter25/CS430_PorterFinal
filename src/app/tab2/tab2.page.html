@@ -1,7 +1,6 @@
 <!--OVERWATCH 2 TANKS TAB-->
 <!----------HTML----------->
 
-
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title> 
@@ -15,13 +14,13 @@
   <!--Creating a list of collapsible objects-->
   <ion-accordion-group [multiple]="true">
     <ion-accordion value = "1">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>D.Va</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
         Fusion Cannons
         <ul>
-          <li>Damage: 06 - 2 (10-20m)</li>
+          <li>Damage: 0.6 - 2 (10-20m)</li>
           <li>Number of Pellets: 11</li>
           <li>Rate of Fire: 6.66</li>
         </ul>
@@ -29,11 +28,11 @@
     </ion-accordion>
 
     <ion-accordion value = "2">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Doomfist</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
-        Default Ability #1
+        Hand Cannon
         <ul>
           <li>Damage: 1.8 - 5 (10-20m)</li>
           <li>Number of Pellets: 11</li>
@@ -43,7 +42,7 @@
     </ion-accordion>
 
     <ion-accordion value = "3">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Junker Queen</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
@@ -57,7 +56,7 @@
     </ion-accordion>
 
     <ion-accordion value = "4">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Orisa</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
@@ -71,7 +70,7 @@
     </ion-accordion>
 
     <ion-accordion value = "5">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Reinhardt</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
@@ -85,7 +84,7 @@
     </ion-accordion>
 
     <ion-accordion value = "6">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Roadhog</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
@@ -98,7 +97,7 @@
       </div>
     </ion-accordion>
     <ion-accordion value = "7">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Sigma</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
@@ -112,7 +111,7 @@
     </ion-accordion>
 
     <ion-accordion value = "8">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Winston</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
@@ -126,7 +125,7 @@
     </ion-accordion>
 
     <ion-accordion value = "9">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Wrecking Ball</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
@@ -140,7 +139,7 @@
     </ion-accordion>
 
     <ion-accordion value = "10">
-      <ion-item slot="header" color="light">
+      <ion-item slot="header">
         <ion-label>Zarya</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
@@ -153,21 +152,7 @@
       </div>
     </ion-accordion>
 
-  </ion-accordion-group>
-
-  <div class="cameraButtons">
-    <ion-button (click)="getCamera()">
-      <ion-icon name="camera"></ion-icon>
-    </ion-button>
-    <ion-button (click)="getGallery()">
-      <ion-icon name="image"></ion-icon>
-    </ion-button>
-  </div>
-
-  <div class="photoDisplay">
-    <img src="{{imgURL}}" height="200" width="200"/>
-  </div>
-  
+  </ion-accordion-group>  
 </ion-content>
 
 

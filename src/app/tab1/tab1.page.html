@@ -11,5 +11,17 @@
 
 <ion-content [fullscreen]="true">
   
+  <div class="cameraButtons">
+    <ion-button (click)="getCamera()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-button>
+    <ion-button (click)="getGallery()">
+      <ion-icon name="image"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="photoDisplay">
+    <img src="{{imgURL}}" height="200" width="200"/>
+  </div>
 
 </ion-content>

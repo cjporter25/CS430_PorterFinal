@@ -1,7 +1,6 @@
 <!--OVERWATCH 2 DPS TAB-->
 
 
-
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -11,11 +10,328 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">OW2 DPS</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ <!--Creating a list of collapsible objects-->
+ <ion-accordion-group [multiple]="true">
+  <ion-accordion value = "1">
+    <ion-item slot="header">
+      <ion-label>Ashe</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Viper (Hipfire)
+      <ul>
+        <li>Damage: 12 - 40 (20-40m)</li>
+        <li>Spread Angle: 1.85 Deg (Max)</li>
+        <li>Rate of Fire: 3.75</li>
+        <li>Ammo: 12</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Viper (ADS)
+      <ul>
+        <li>Damage: 22.5 - 70 (30-50m)</li>
+        <li>Spread Angle: 0.00 Deg</li>
+        <li>Rate of Fire: 0.65</li>
+        <li>Ammo: 12</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "2">
+    <ion-item slot="header">
+      <ion-label>Bastion</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Configuration: Recon
+      <ul>
+        <li>Damage: 7.5 - 25 (30-50m)</li>
+        <li>Spread Angle: 0.00 Deg</li>
+        <li>Rate of Fire: 5</li>
+        <li>Ammo: 25</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Configuration: Assault
+      <ul>
+        <li>Damage: 3.6 - 12 (30-50m)</li>
+        <li>Spread Angle: 2.00 Deg</li>
+        <li>Rate of Fire: 30</li>
+        <li>Ammo: Unlimited</li>
+        <li>Duration: 6 Seconds</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "3">
+    <ion-item slot="header">
+      <ion-label>Cassidy</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "4">
+    <ion-item slot="header">
+      <ion-label>Echo</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "5">
+    <ion-item slot="header" >
+      <ion-label>Genji</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "6">
+    <ion-item slot="header">
+      <ion-label>Hanzo</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "7">
+    <ion-item slot="header">
+      <ion-label>Junkrat</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "8">
+    <ion-item slot="header">
+      <ion-label>Mei</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "9">
+    <ion-item slot="header">
+      <ion-label>Pharah</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "10">
+    <ion-item slot="header">
+      <ion-label>Reaper</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "11">
+    <ion-item slot="header">
+      <ion-label>Sojourn</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "12">
+    <ion-item slot="header">
+      <ion-label>Soldier:76</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "13">
+    <ion-item slot="header">
+      <ion-label>Sombra</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "14">
+    <ion-item slot="header">
+      <ion-label>Symmetra</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "15">
+    <ion-item slot="header">
+      <ion-label>Torbjorn</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "16">
+    <ion-item slot="header">
+      <ion-label>Tracer</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value = "17">
+    <ion-item slot="header">
+      <ion-label>Widowmaker</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      Default Ability #1
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+    <div class="ion-padding" slot="content">
+      Default Ability #2
+      <ul>
+        <li>####</li>
+      </ul>
+    </div>
+  </ion-accordion>
+
+</ion-accordion-group>
 
   
 </ion-content>
