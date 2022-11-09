@@ -3,18 +3,35 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { IonAccordionGroup } from '@ionic/angular';
-//Import the Cordova Camera Plugin - App Module TypeScript
+
+
+
+import { provideFirestore, getFirestore, collection, doc, setDoc, query, where } from '@angular/fire/firestore';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideStorage, getStorage } from '@angular/fire/storage';
+import { Firestore } from '@angular/fire/firestore';
+import { Storage } from '@angular/fire/storage';
 
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
+
+
 export class Tab2Page {
 
-  constructor() { }
+  constructor(private firestore: Firestore,
+              private storage: Storage) { }    
 
+ // doomfistDamage = this.firestore.collection('Doomfist');
+    
 }
+
+
+
+
 
 export class ExampleComponent {
   @ViewChild('accordionGroup', { static: true }) accordionGroup: IonAccordionGroup;

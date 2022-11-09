@@ -1,3 +1,5 @@
+//TAB 1 SCSS//
+
 ion-content::part(background) {
     --background: var(--OW2-color-dark-blue);
 }
@@ -15,12 +17,6 @@ ion-title {
     font-size: 12px;
 }
 
-/***TO DO ***/
-    //Figure out how to apply specific styling to only android. 
-    //  Title is not comfortable vertical centered
-
-
-
 ion-icon {
     //position: right;
     --color: var(--OW2-color-orange);
@@ -35,7 +31,7 @@ div.photoDisplay {
 }
 
 div.cameraButtons {
-    padding-top: 10px; //Provide some space away from accordian elements
+    padding-top: 100px; //Provide some space away from accordian elements
     width: 40%;
     margin: 0 auto;
 }
